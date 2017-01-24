@@ -339,7 +339,9 @@ local t1 = os.clock()
 
 		ambiences = get_ambience(players[n])
 
-print(string.format("elapsed time: %.4f\n", os.clock() - t1))
+		if minetest.check_player_privs(player_name, {server=true}) then
+			print(string.format("elapsed time: %.4f\n", os.clock() - t1))
+		end
 
 		still_playing(ambiences, player_name)
 
