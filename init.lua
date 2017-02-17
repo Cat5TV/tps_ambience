@@ -115,7 +115,7 @@ local jungle_night = {
 
 local void = { -- TPS-Domes: Void between domes
 	handler = {}, frequency = 1000,
-	{name = "fire_large", length = 8, gain = 0.8}
+	{name = "void", length = 52, gain = 0.8}
 }
 
 local radius = 6
