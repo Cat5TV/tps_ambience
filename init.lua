@@ -113,7 +113,7 @@ local jungle_night = {
 	{name = "frog", length = 1},
 }
 
-local void = {
+local void = { -- TPS-Domes: Void between domes
 	handler = {}, frequency = 1000,
 	{name = "fire_large", length = 8, gain = 0.8}
 }
