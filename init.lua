@@ -163,7 +163,7 @@ local get_ambience = function(player)
 			"default:water_flowing", "default:water_source",
 			"default:river_water_flowing", "default:river_water_source",
 			"default:desert_sand", "default:desert_stone", "default:snowblock",
-			"default:obsidian", "air"
+			"loud_walking:scrith", "air"
 		})
 
 	num_fire = (cn["fire:basic_flame"] or 0) + (cn["fire:permanent_flame"] or 0)
