@@ -174,7 +174,7 @@ local get_ambience = function(player)
 	num_snow = (cn["default:snowblock"] or 0)
 	num_jungletree = (cn["default:jungletree"] or 0)
 	num_river = (cn["default:river_water_source"] or 0) + (cn["default:river_water_flowing"] or 0)
-	num_obsidian = (cn["default:obsidian"] or 0)
+	num_obsidian = (cn["loud_walking:scrith"] or 0)
 	num_air = (cn["air"] or 0)
 --[[
 print (
