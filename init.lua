@@ -218,7 +218,7 @@ print (
 		return {beach = beach}
 	end
 
-	if num_scrith > 10 and num_air > 2000 then
+	if num_scrith > 2 and num_air > 2000 then
 		return {void = void}
 	end
 
