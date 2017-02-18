@@ -115,12 +115,12 @@ local jungle_night = {
 
 local void = { -- TPS-Domes: Void between domes
 	handler = {}, frequency = 1000,
-	{name = "void", length = 52, gain = 0.8}
+	{name = "void", length = 18, gain = 0.5}
 }
 
 local radius = 6
 local num_fire, num_lava, num_water_flowing, num_water_source, num_air,
-	num_desert, num_snow, num_jungletree, num_river, num_obsidian
+	num_desert, num_snow, num_jungletree, num_river, num_scrith
 
 -- check where player is and which sounds are played
 local get_ambience = function(player)
@@ -174,7 +174,7 @@ local get_ambience = function(player)
 	num_snow = (cn["default:snowblock"] or 0)
 	num_jungletree = (cn["default:jungletree"] or 0)
 	num_river = (cn["default:river_water_source"] or 0) + (cn["default:river_water_flowing"] or 0)
-	num_obsidian = (cn["loud_walking:scrith"] or 0)
+	num_scrith = (cn["loud_walking:scrith"] or 0)
 	num_air = (cn["air"] or 0)
 --[[
 print (
@@ -187,7 +187,7 @@ print (
 	"jt:" .. num_jungletree
 )
 ]]
-print ("---", num_obsidian, num_air)
+
 	-- is fire redo mod active?
 	if fire and fire.mod and fire.mod == "redo" then
 
@@ -216,7 +216,7 @@ print ("---", num_obsidian, num_air)
 		return {beach = beach}
 	end
 
-	if num_obsidian > 10 and num_air > 2000 then
+	if num_scrith > 10 and num_air > 2000 then
 		return {void = void}
 	end
 
