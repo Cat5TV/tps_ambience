@@ -188,7 +188,10 @@ print (
 )
 ]]
 
-	print ("---", num_scrith, num_air)		
+print (
+	"scrith:" .. num_scrith,
+	"air:" .. num_air
+)
 	
 	-- is fire redo mod active?
 	if fire and fire.mod and fire.mod == "redo" then
